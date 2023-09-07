@@ -1,4 +1,4 @@
-//  Primitive
+//  Primitive (Stores in Stack memory which gives copy of variables)
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
@@ -18,7 +18,7 @@ console.log(id === anotherId);
 
 
 
-// Reference (Non primitive)
+// Reference (Non primitive) (Stores in Heap memory which gives a reference of original value)
 
 // Array, Objects, Functions
 
