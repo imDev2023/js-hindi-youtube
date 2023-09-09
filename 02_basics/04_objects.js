@@ -33,10 +33,24 @@ const obj3 = {...obj1, ...obj2, ...obj4};
 
 // console.log(obj3);
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+const course = {
+    coursename : "Js in Hindi",
+    price : "999",
+    courseInstructor: "hitesh"
+}
+
+// courseInstructor repeation
+
+const {courseInstructor : instructor} = course;
+
+console.log(instructor);
+
+
