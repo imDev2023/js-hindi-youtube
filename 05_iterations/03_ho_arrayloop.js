@@ -30,3 +30,6 @@ for (const [key, value] of map) {
     console.log(`${key} :- ${value}`);
     
 }
+
+// for in loop is used mostly for OBJECTS
+
