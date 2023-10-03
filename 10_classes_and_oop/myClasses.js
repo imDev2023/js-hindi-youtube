@@ -1,43 +1,54 @@
 // ES6
 
-class User {
-    constructor(username, email, password){
-        this.username = username;
-        this.email = email;
-        this.password = password
-    }
+// class User {
+//     constructor(username, email, password){
+//         this.username = username;
+//         this.email = email;
+//         this.password = password;
+//     }
 
-    encryptPassword(){
-        return `${this.password}abc`
-    }
-    changeUsername(){
-        return `${this.username.toUpperCase()}`
-    }
+//     encryptPassword(){
+//         return (`${this.password}ABC*(&)`);
+//     }
 
-}
+//     changeUsername(){
+//         return `${this.username.toUpperCase()}`
+//     }
 
-const chai = new User("chai", "chai@gmail.com", "123")
+//     changeEmail(){
+//         return `${this.email.toLowerCase()}`
+//     }
 
-console.log(chai.encryptPassword());
-console.log(chai.changeUsername());
+// }
+
+const chai = new User("Chai", "FARHAN@gmail.com", 'Fisle5443')
+
+// console.log(chai.changeUsername())
+// console.log(chai.encryptPassword());
+// console.log(chai.changeEmail());
 
 // behind the scene
 
 function User(username, email, password){
-    this.username = username;
-    this.email = email;
-    this.password = password
+        this.username = username;
+        this.email = email;
+        this.password = password;
 }
 
-User.prototype.encryptPassword = function(){
-    return `${this.password}abc`
+User.prototype.encryptPassword= function(){
+    return (`${this.password}ABC*(&)`);
 }
-User.prototype.changeUsername = function(){
+
+User.prototype.changeEmail= function(){
+    return `${this.email.toLowerCase()}`
+}
+
+User.prototype.changeUsername= function(){
     return `${this.username.toUpperCase()}`
 }
 
+const newChai = new User("farhanbasharat", "FARHAN@GMAIL.COM", "asdfe")
 
-const tea = new User("tea", "tea@gmail.com", "123")
-
-console.log(tea.encryptPassword());
-console.log(tea.changeUsername());
+console.log(newChai.changeEmail())
+console.log(newChai.changeUsername())
+console.log(newChai.encryptPassword())
