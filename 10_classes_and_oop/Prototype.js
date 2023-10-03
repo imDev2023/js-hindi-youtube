@@ -1,67 +1,76 @@
-// let myName = "hitesh     "
-// let mychannel = "chai     "
+let myName = "Farhan     "
+let myChannel = "Chai          "
 
-// console.log(myName.trueLength);
+// console.log(myName.trim().length);
 
+Object.prototype.trueLength = function(){
+    console.log(`My length is ${this.trim().length}`)
+}
 
-let myHeros = ["thor", "spiderman"]
+// myChannel.trueLength()
+// myName.trueLength()
 
+let myHeros = ['thor', 'spiderman'];
 
 let heroPower = {
-    thor: "hammer",
-    spiderman: "sling",
+    thor: 'hammer',
+    spiderman: 'slang',
 
     getSpiderPower: function(){
-        console.log(`Spidy power is ${this.spiderman}`);
-    }
+        console.log(`spidy power is ${this.spiderman}`);
+    },
+    
 }
 
-Object.prototype.hitesh = function(){
-    console.log(`hitesh is present in all objects`);
+Object.prototype.farhan = function(){
+// console.log(`Farhan is present in all Objects`)
 }
 
-Array.prototype.heyHitesh = function(){
-    console.log(`Hitesh says hello`);
+// heroPower.farhan()
+// myHeros.farhan()
+
+Array.prototype.heyFarhan= function(){
+    console.log(`Farhan says hello`);
 }
 
-// heroPower.hitesh()
-// myHeros.hitesh()
-// myHeros.heyHitesh()
-// heroPower.heyHitesh()
+// myHeros.heyFarhan()
+// heroPower.heyFarhan()
 
 // inheritance
 
-const User = {
-    name: "chai",
-    email: "chai@google.com"
+const User={
+    name:'chai',
+    email:'chai@gmail.com'
 }
 
 const Teacher = {
-    makeVideo: true
+    makeVideo : true
 }
 
 const TeachingSupport = {
-    isAvailable: false
+    isAvaliable : false
 }
 
 const TASupport = {
-    makeAssignment: 'JS assignment',
-    fullTime: true,
+    makeAssignment: "JS Assigment",
+    fullTime : true,
     __proto__: TeachingSupport
 }
 
-Teacher.__proto__ = User
+Teacher.__proto__= User
 
-// modern syntax
+// modern Syntex
+
 Object.setPrototypeOf(TeachingSupport, Teacher)
 
-let anotherUsername = "ChaiAurCode     "
 
-String.prototype.trueLength = function(){
+let anotherUsername = "ChaiaurCode          "
+
+String.prototype.trueLength= function(){
     console.log(`${this}`);
-    console.log(`True length is: ${this.trim().length}`);
+    console.log(`True length is ${this.trim().length}`)
 }
 
 anotherUsername.trueLength()
-"hitesh".trueLength()
-"iceTea".trueLength()
+"Farhan           ".trueLength()
+"icetea".trueLength()
